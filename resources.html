@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources | Personal Website</title>
+    <style>
+        :root {
+            --bg: #0f172a;
+            --card: #1e293b;
+            --text: #f1f5f9;
+            --accent: #38bdf8;
+            --muted: #94a3b8;
+        }
+        body {
+            margin: 0;
+            font-family: "Poppins", Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 50px;
+            align-items: center;
+            background: rgba(255,255,255,0.05);
+            backdrop-filter: blur(6px);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        nav a {
+            color: var(--text);
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        nav a:hover {
+            color: var(--accent);
+        }
+        .section {
+            padding: 50px;
+            max-width: 1100px;
+            margin: auto;
+        }
+        h2 {
+            margin-bottom: 20px;
+            font-size: 32px;
+        }
+        .resource-card {
+            background: var(--card);
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 25px;
+            border: 1px solid rgba(255,255,255,0.08);
+        }
+        .resource-card h3 {
+            margin: 0 0 10px 0;
+            font-size: 22px;
+        }
+        .resource-card p {
+            color: var(--muted);
+            margin-bottom: 15px;
+        }
+        .download-btn {
+            background: var(--accent);
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            color: black;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+        .download-btn:hover {
+            opacity: 0.8;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            color: var(--muted);
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h2>My Website</h2>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="resources.html">Resources</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="section">
+    <h2>Resources & Downloads</h2>
+
+    <!-- ITEM 1 -->
+    <div class="resource-card">
+        <h3>1. Résumé</h3>
+        <p>Submit an up-to-date résumé in Kiswahili, English, and one indigenous African language.</p>
+        <a class="download-btn" href="downloads/English resume.pdf" download>Download Resume (English)</a>
+        <a class="download-btn" href="downloads/Kiswahili resume.pdf" download>Download Resume (Kiswahili)</a>
+        <a class="download-btn" href="downloads/Taita resume.pdf" download>Download Resume (Taita)</a>
+    </div>
+
+    <!-- ITEM 2 -->
+    <div class="resource-card">
+        <h3>2. Autobiographical Essay</h3>
+        <p>Write a 20–30 page autobiographical essay highlighting your background, growth, and academic journey.</p>
+        <a class="download-btn" href="downloads/Autobiography.pdf" download>Download Autobiography Essay</a>
+    </div>
+
+    <!-- ITEM 3 -->
+    <div class="resource-card">
+        <h3>3. Presentation on Autobiography</h3>
+        <p>Prepare an 8–12 slide PowerPoint/Prezi summarizing your autobiographical essay.</p>
+        <a class="download-btn" href="downloads/AUTOBIOGRAPHY ESSAY.pptx" download>Download PPT Template</a>
+    </div>
+
+    <!-- ITEM 4 -->
+    <div class="resource-card">
+        <h3>4. Innovation/Invention Video</h3>
+        <p>Record a 20-minute video explaining an innovation/invention in your field, with abstracts in 3 languages.</p>
+        <a class="download-btn" href="downloads/Innovation.mp4" download>Download Video</a>
+    </div>
+
+    <!-- ITEM 5 -->
+    <div class="resource-card">
+        <h3>5. Innovation Presentation</h3>
+        <p>Prepare a presentation summarizing the innovation or invention.</p>
+        <a class="download-btn" href="downloads/Innovation in IT Shaped by African Culture.pptx" download>Download PPT Template</a>
+    </div>
+
+    <!-- ITEM 6 -->
+    <div class="resource-card">
+        <h3>6. African Culture Video</h3>
+        <p>Record a 20-minute video on an African cultural aspect with a multilingual abstract.</p>
+        <a class="download-btn" href="downloads/African cultural aspect.mp4" download>Download Video</a>
+    </div>
+
+    <!-- ITEM 7 -->
+    <div class="resource-card">
+        <h3>7. African Culture Presentation</h3>
+        <p>Create a presentation showing the cultural aspect and its relevance to your specialization.</p>
+        <a class="download-btn" href="downloads/The Role of African Culture in Shaping Artificial.pptx" download>Download Template</a>
+    </div>
+
+    <!-- ITEM 8 -->
+    <div class="resource-card">
+        <h3>8. Modern Challenge Video</h3>
+        <p>Produce a 20-minute video discussing a modern societal challenge and proposing a solution.</p>
+        <a class="download-btn" href="downloads/Society challenges.mp4" download>Download Video</a>
+    </div>
+
+    <!-- ITEM 9 -->
+    <div class="resource-card">
+        <h3>9. Photographic Essay</h3>
+        <p>Submit a photographic essay (10–20 photos) focusing on an African community issue.</p>
+        <a class="download-btn" href="downloads/Photographic Essay.pdf" download>Download Essay</a>
+    </div>
+
+</section>
+
+<footer>
+    © 2025 Lethal — All Rights Reserved
+</footer>
+
+</body>
+</html>
