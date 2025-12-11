@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+
+    <style>
+        :root {
+            --bg: #0f172a;
+            --card: #1e293b;
+            --text: #f1f5f9;
+            --accent: #38bdf8;
+            --muted: #94a3b8;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Poppins", Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 50px;
+            align-items: center;
+            background: rgba(255,255,255,0.04);
+            backdrop-filter: blur(6px);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav a {
+            color: var(--text);
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: var(--accent);
+        }
+
+        .hero {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 70vh;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            color: var(--muted);
+            font-size: 18px;
+        }
+
+        .section {
+            padding: 50px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .card {
+            background: var(--card);
+            padding: 30px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+        }
+
+        .details-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 15px;
+        }
+
+        .detail-box {
+            background: #0f172a;
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid rgba(255,255,255,0.06);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            color: var(--muted);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <header>
+        <h2 style="margin:0;">My Website</h2>
+        <nav>
+            <a href="#">Home</a>
+            <a href="resources.html">Resources</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <!-- HERO BANNER -->
+    <section class="hero">
+        <div>
+            <h1>Hello, I'm <span style="color: var(--accent);">HARUN</span></h1>
+            <p>Student • Innovator • Researcher • Tech Enthusiast</p>
+        </div>
+    </section>
+
+    <!-- PERSONAL DETAILS -->
+    <section class="section">
+        <h2>Personal Details</h2>
+        <div class="card">
+            <div class="details-grid">
+                <div class="detail-box">
+                    <strong>Full Name:</strong><br>
+                    HARUN MNJAU MWAMUNGA
+                </div>
+                <div class="detail-box">
+                    <strong>Date of Birth:</strong><br>
+                    16/05/2004
+                </div>
+                <div class="detail-box">
+                    <strong>Nationality:</strong><br>
+                    Kenyan
+                </div>
+                <div class="detail-box">
+                    <strong>Email:</strong><br>
+                    hunter12@gmail.com
+                </div>
+                <div class="detail-box">
+                    <strong>Phone Number:</strong><br>
+                    +254 743 224 565
+                </div>
+                <div class="detail-box">
+                    <strong>Languages:</strong><br>
+                    English, Kiswahili, Taita
+                </div>
+            </div>
+        </div>
+
+        <!-- ABOUT ME SECTION -->
+        <h2>About Me</h2>
+        <div class="card">
+            <p>
+                I am a passionate student pursuing my academic and professional growth in my chosen field.
+                I have a strong interest in innovation, research, African culture, and modern technological
+                solutions that impact society. My goal is to become a highly skilled professional while
+                contributing positively to my community.
+            </p>
+        </div>
+
+        <!-- SKILLS -->
+        <h2>Skills</h2>
+        <div class="card">
+            <ul>
+                <li>Web Development (HTML, CSS, JS)</li>
+                <li>Data Analysis & Research</li>
+                <li>Presentation & Communication</li>
+                <li>Problem Solving</li>
+                <li>Academic Writing</li>
+            </ul>
+        </div>
+
+        <!-- CONTACT -->
+        <h2>Contact</h2>
+        <div class="card">
+            <p><strong>Email:</strong> hunter12@gmail.com</p>
+            <p><strong>Phone:</strong> +254 743 224 565</p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        © 2025 Lethal — All Rights Reserved
+    </footer>
+
+</body>
+</html>
